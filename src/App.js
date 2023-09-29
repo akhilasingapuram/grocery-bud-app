@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import List from "./List";
 import Alert from "./Alert";
-// import { type } from "@testing-library/user-event/dist/type";
 
 const getLocalStorage = () => {
   let list = localStorage.getItem("list");
@@ -68,7 +67,7 @@ function App() {
     <section className="section-center">
       <form className="grocery-form" onSubmit={handleSubmit}>
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
-        <h3>grocery bud</h3>
+        <h3>Grocery bud</h3>
         <div className="form-control">
           <input
             type="text"

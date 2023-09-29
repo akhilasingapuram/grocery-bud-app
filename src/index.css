@@ -1,13 +1,84 @@
-body {
+body{
+  font-family: 'Arial',sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section-center{
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+  overflow: hidden;
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+}
+.grocery-form{
+  margin-bottom: 20px;
+}
+.form-control{
+  display: flex;
+  justify-content: space-between;
+}
+.grocery{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.submit-btn{
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit-btn:hover{
+  background-color: #45a049;
+}
+.grocery-container{
+  margin-top: 20px;
+}
+.clear-btn{
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.clear-btn:hover{
+  background-color: #d32f2f;
+}
+.grocery-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.grocery-table th,.grocery-table td{
+  border:1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.grocery-table th{
+  background-color: #f2f2f2;
+}
+.edit-btn, .delete-btn{
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.edit-btn:hover, .delete-btn:hover{
+  background-color: #45a049;
 }
